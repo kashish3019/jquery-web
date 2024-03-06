@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <!-- jquery script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Swipper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Style  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Tailwind css script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-container {
+            position: relative;
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 20px;
+            z-index: 100;
+            width: auto;
+            height: auto;
+            background: none;
+            color: white;
+            background-color: black;
+            padding: 7px;
+            border-radius: 5px;
+        }
+
+        .swiper-button-prev {
+            left: 91%;
+        }
+
+        .swiper-button-next {
+            right: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="bg-neutral-900">
+        <div class="container">
+            <div class="justify-between flex items-center">
+                <div class="logo">
+                    <a href="/index.html" class="p-2">
+                        <img src="/image/logo.png" alt="" class="w-[100px] h-[100]">
+                    </a>
+                </div>
+                <nav class="bg-black justify-between flex items-center px-10 py-3 rounded-lg">
+                    <a href="/index.html" class="text-white text-lg font-semibold px-4">Home</a>
+
+                    <div class="relative group">
+                        <a href="/product.html"
+                            class="text-white relative text-lg font-semibold z-10 px-4 ">Categories<i
+                                class="fa-solid fa-angle-down px-2"></i></a>
+                        <ul
+                            class="text-left text-black bg-white absolute top-[30px] invisible group-hover:visible group-hover:opacity-100 z-10 p-5 rounded shadow-2xl">
+                            <li class="px-4 py-2 w-[200px] border-b-2 relative">
+                                <button id="man">Man's Fashion</button>
+                            </li>
+                            <li class="px-4 py-2 w-[200px] border-b-2">
+                                <button id="woman">Woman's Fashion</button>
+
+                            </li>
+                            <li class="px-4 py-2 w-[200px] border-b-2">
+                                <button id="kids">Kid's Fashion</button>
+                            </li>
+                            <li class="px-4 py-2 w-[200px] border-b-2">
+                                <button id="beauty">Beauty</button>
+                            </li>
+                            <li class="px-4 py-2 w-[200px] border-b-2">
+                                <button id="jewellery">Jewellery</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <input type="search" id="searchInput"
+                        class="py-2 px-4 text-current rounded-sm w-[500px] bg-zinc-700"
+                        placeholder="Search for Products">
+                    <button id="searchButton"
+                        class="px-4 py-2 text-white bg-zinc-700 hover:bg-zinc-600 rounded-md ml-4">Search</button>
+
+                    <a href="#"><i class="fa-regular fa-heart px-4 text-white text-2xl"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping px-4 text-white text-2xl"></i></a>
+                    <a href="signup.html" class="text-white text-lg font-semibold">Login/SignUp</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- slider banner  -->
+    <section class="banner">
+        <div class="swiper Slider">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/50303852052510.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/50303852118046.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/50303852412958.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets.tatacliq.com/medias/sys_master/images/50303852478494.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-2  -->
+    <section>
+        <div class="banner-2 row">
+            <img src="/image/b-1.jpg">
+            <img src="/image/b-2.jpg">
+            <img src="/image/b-3.jpg">
+            <img src="/image/b-4.jpg">
+            <img src="/image/b-5.jpg">
+            <img src="/image/b-6.jpg">
+            <img src="/image/b-7.jpg">
+            <img src="/image/b-8.jpg">
+            <img src="/image/b-9.jpg">
+        </div>
+    </section>
+    <!-- banner-3  -->
+    <section>
+        <div class="banner-3 row">
+            <img src="/image/b2-2.jpg">
+            <img src="/image/b2-3.jpg">
+            <img src="/image/b2-4.jpg">
+            <img src="/image/b2-5.jpg">
+        </div>
+    </section>
+    <!-- blockbuster offer  -->
+    <section class="offer">
+        <div class="container">
+            <div class="relative pb-12">
+                <h1 class="text-center uppercase text-5xl font-semibold text-indigo-950 pt-10">blockbuster &nbsp;deals
+                </h1>
+                <div class="w-[80px] border-b-2 border-orange-600 absolute top-[120px] left-[43.8%]"></div>
+                <span class="absolute left-[48.6%] top-[60px] text-7xl text-yellow-600">.</span>
+                <span class="absolute left-[49.1%] top-[13px] text-orange-600 text-9xl">.</span>
+                <span class="absolute left-[50.8%] top-[60px] text-7xl text-yellow-600">.</span>
+                <div class="w-[80px] border-b-2 border-orange-600 absolute top-[120px] right-[43.8%]"></div>
+            </div>
+            <div class="row justify-between padding-10">
+                <div class="w-50">
+                    <img src="/image/i-1.jpg" alt="">
+                </div>
+                <div class="w-50">
+                    <img src="/image/i-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-between padding-10">
+                <div class="w-50">
+                    <img src="/image/i-3.jpg" alt="">
+                </div>
+                <div class="w-50">
+                    <img src="/image/i-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-between padding-10">
+                <div class="w-50">
+                    <img src="/image/i-5.jpg" alt="">
+                </div>
+                <div class="w-50">
+                    <img src="/image/i-6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- latest drop  -->
+    <section class="latest-drop">
+        <div class="container">
+            <div class="relative pb-12">
+                <h1 class="text-center uppercase text-5xl font-semibold text-indigo-950 pt-10">Westside &nbsp;Watchlist
+                </h1>
+                <div class="w-[115px] border-b-2 border-orange-600 absolute top-[120px] left-[43.8%]"></div>
+                <span class="absolute left-[48.6%] top-[60px] text-7xl text-yellow-600">.</span>
+                <span class="absolute left-[49%] top-[13px] text-orange-600 text-9xl">.</span>
+                <span class="absolute left-[50.5%] top-[60px] text-7xl text-yellow-600">.</span>
+                <div class="w-[80px] border-b-2 border-orange-600 absolute top-[120px] right-[43.8%]"></div>
+            </div>
+            <div class="row">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./image/o-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/o-2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/o-3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/o-4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/o-5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/o-6.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/o-7.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/o-8.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next next"></div>
+                    <div class="swiper-button-prev prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blockbuster offer  -->
+    <section class="offer">
+        <div class="container">
+            <div class="relative pb-12">
+                <h1 class="text-center uppercase text-5xl font-semibold text-indigo-950 pt-10">Tranding on Mars</h1>
+                <div class="w-[80px] border-b-2 border-orange-600 absolute top-[120px] left-[43.8%]"></div>
+                <span class="absolute left-[48.6%] top-[60px] text-7xl text-yellow-600">.</span>
+                <span class="absolute left-[49.1%] top-[13px] text-orange-600 text-9xl">.</span>
+                <span class="absolute left-[50.8%] top-[60px] text-7xl text-yellow-600">.</span>
+                <div class="w-[80px] border-b-2 border-orange-600 absolute top-[120px] right-[43.8%]"></div>
+            </div>
+            <div class="row justify-between padding-10">
+                <div class="w-50">
+                    <img src="/image/b3-1.jpg" alt="">
+                </div>
+                <div class="w-50">
+                    <img src="/image/b3-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-between padding-10">
+                <div class="w-50">
+                    <img src="/image/b3-3.jpg" alt="">
+                </div>
+                <div class="w-50">
+                    <img src="/image/b3-4.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-between padding-10">
+                <div class="w-50">
+                    <img src="/image/b3-6.webp" alt="">
+                </div>
+                <div class="w-50">
+                    <img src="/image/b3-5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- latest drop  -->
+    <section class="latest-drop">
+        <div class="container">
+            <div class="container">
+                <div class="relative pb-12">
+                    <h1 class="text-center uppercase text-5xl font-semibold text-indigo-950 pt-10">This Week's Wonders
+                    </h1>
+                    <div class="w-[80px] border-b-2 border-orange-600 absolute top-[120px] left-[43.8%]"></div>
+                    <span class="absolute left-[48.6%] top-[60px] text-7xl text-yellow-600">.</span>
+                    <span class="absolute left-[49.1%] top-[13px] text-orange-600 text-9xl">.</span>
+                    <span class="absolute left-[50.8%] top-[60px] text-7xl text-yellow-600">.</span>
+                    <div class="w-[80px] border-b-2 border-orange-600 absolute top-[120px] right-[43.8%]"></div>
+                </div>
+                <div class="row">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./image/k-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/k-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/k-5.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/k-3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/k-4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/k-6.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/k-7.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/k-8.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+</body>
+
+<!-- SCRIPTS -->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+    var swiper = new Swiper(".Slider", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
+    });
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+<!-- <script>
+    $(document).ready(function() {
+        $('button[data-category]').click(function() {
+            $('#product-details').empty();
+    
+            var category = $(this).data('category');
+    
+            $.getJSON('products.json', function(data) {
+                var filteredProducts = data.products.filter(function(product) {
+                    return product.category === category;
+                });
+    
+                if(filteredProducts.length > 0) {
+                    filteredProducts.forEach(function(product) {
+                        var productHTML = `<div class="product">
+                            <img src="${product.img}" alt="${product.name}" style="width: 100px;">
+                            <h2>${product.name}</h2>
+                            <p>Price: $${product.price}</p>
+                            <p>Category: ${product.category}</p>
+                        </div>`;
+                        $('#product-details').append(productHTML);
+                    });
+                } else {
+                    $('#product-details').html('<p>No products found in this category.</p>');
+                }
+            });
+        });
+    });
+    </script> -->
+
+
+
+</html>

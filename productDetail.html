@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- jquery link  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Style  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Tailwind css script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <header class="bg-neutral-900">
+        <div class="container">
+            <div class="justify-between flex items-center">
+                <div class="logo">
+                    <a href="/index.html" class="p-2">
+                        <img src="/image/logo.png" alt="" class="w-[100px] h-[100]">
+                    </a>
+                </div>
+                <nav class="bg-black justify-between flex items-center px-10 py-3 rounded-lg">
+                    <a href="/index.html" class="text-white text-lg font-semibold px-4">Home</a>
+
+                    <div class="relative group">
+                        <a href="/product.html"
+                            class="text-white relative text-lg font-semibold z-10 px-4 ">Categories<i
+                                class="fa-solid fa-angle-down px-2"></i></a>
+                        <ul
+                            class="text-left text-black bg-white absolute top-[30px] invisible group-hover:visible group-hover:opacity-100 z-10 p-5 rounded shadow-2xl">
+                            <li class="px-4 py-2 w-[200px] border-b-2 relative">
+                                <button id="man">Man's Fashion</button>
+                            </li>
+                            <li class="px-4 py-2 w-[200px] border-b-2">
+                                <button id="woman">Woman's Fashion</button>
+
+                            </li>
+                            <li class="px-4 py-2 w-[200px] border-b-2">
+                                <button id="kids">Kid's Fashion</button>
+                            </li>
+                            <li class="px-4 py-2 w-[200px] border-b-2">
+                                <button id="beauty">Beauty</button>
+                            </li>
+                            <li class="px-4 py-2 w-[200px] border-b-2">
+                                <button id="jewellery">Jewellery</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <input type="search" id="searchInput"
+                        class="py-2 px-4 text-current rounded-sm w-[500px] bg-zinc-700"
+                        placeholder="Search for Products">
+                    <button id="searchButton"
+                        class="px-4 py-2 text-white bg-zinc-700 hover:bg-zinc-600 rounded-md ml-4">Search</button>
+
+                    <a href="#"><i class="fa-regular fa-heart px-4 text-white text-2xl"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping px-4 text-white text-2xl"></i></a>
+                    <a href="signup.html" class="text-white text-lg font-semibold">Login/SignUp</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="product-details">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get("id");
+
+            $.getJSON('products.json', function (data) {
+                const product = data.products.find(p => p.id == productId);
+
+                if (product) {
+                    var productHTML = `
+                    <div class="container flex w-full signle">
+                        <div class="w-1/3 signleimg">
+                            <img src="${product.img}" class="max-w-full h-auto rounded-lg">
+                        </div>
+                        <div class="w-2/3 px-4 signlepage">
+                            <p>${product.category}</p>
+                            <h2>${product.name}</h2>
+                            <p>Price: $${product.price}</p>
+                            <p>Size: <br>${product.size}</p>
+                            <div class="flex items-center mt-4">
+                                <button id="decrease" class="bg-gray-300 px-2 py-1">-</button>
+                                <input type="text" id="quantity" value="1" class="mx-2 border text-center w-12">
+                                <button id="increase" class="bg-gray-300 px-2 py-1">+</button>
+                            </div>
+                            <button id="orderNow" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Order Now</button>
+                        </div>
+                    </div>`;
+                    $('#product-details').append(productHTML);
+                } else {
+                    $('#product-details').html('<p>No product found with the provided ID.</p>');
+                }
+            });
+
+            $(document).on('click', '#orderNow', function() {
+                alert('Your order has been placed!');
+            });
+
+            $(document).on('click', '#increase', function() {
+                let currentQty = parseInt($('#quantity').val());
+                $('#quantity').val(currentQty + 1);
+            });
+
+            $(document).on('click', '#decrease', function() {
+                let currentQty = parseInt($('#quantity').val());
+                if (currentQty > 1) 
+                { 
+                    $('#quantity').val(currentQty - 1);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

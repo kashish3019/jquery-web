@@ -1,0 +1,153 @@
+{
+    "products": [
+      {
+        "id":1,
+        "price": 399,
+        "name": "Basic crop tshirt",
+        "img":"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1663768526_6394153.jpg",
+        "category": "Woman's Fashion",
+        "size":"L,M,XL,XXL"
+      },
+      {
+        "id":2,
+        "name": "girl one piece",
+        "price": 500,
+        "img":"https://tse4.mm.bing.net/th?id=OIP.TVYCyEjxpsOJTT4IhPFC4AHaHa&pid=Api&P=0&h=180",
+        "category": "Kid's Fashion"
+      },
+      {
+        "id":3,
+        "name": "Women braslet",
+        "price": 389,
+        "img":"https://tse4.explicit.bing.net/th?id=OIP.UnM7WZ39LPd5r7xcqkQ_qAHaJQ&pid=Api&P=0&h=180",
+        "category": "Jewellery"
+      },
+      {
+        "id":4,
+        "name": "women Beauty product",
+        "price":129,
+        "img":"https://media.allure.com/photos/57d18462067b53970386200c/master/pass/natural-products.jpg?mbid=social_retweet",
+        "category": "Beauty"
+      },
+      {
+        "id":5,
+        "name": "Casual white Tshirt",
+        "price": 569,
+        "img":"https://sp.yimg.com/ib/th?id=OPAC.qEr4QUysfdDptQ474C474&o=5&pid=21.1&w=&h=",
+        "category": "Man's Fashion"
+      },
+      {
+        "id":6,
+        "name": "Co-order set ",
+        "price": 899,
+        "img":"https://yevuclothing.com/cdn/shop/products/yevu-wrap-top-with-puff-sleeve-poppy-28528995664045.jpg?v=1618717969&width=1400",
+        "category": "Woman's Fashion"
+      },
+      {
+        "id":7,
+        "name": "combo set",
+        "price": 599,
+        "img":"https://i.pinimg.com/originals/4c/c5/4e/4cc54e7aed37d9d765d1e528472076f5.jpg",
+        "category": "Jewellery"
+      },
+      {
+        "id":8,
+        "name": "Women Formal wear",
+        "price": 1030,
+        "img":"https://i.pinimg.com/originals/9f/b6/20/9fb620aea26d1551e3d105959dba72e9.jpg",
+        "category": "Woman's Fashion"
+      },
+      {
+        "id":9,
+        "name": "Rare beauty combo",
+        "price": 1200,
+        "img":"https://4.bp.blogspot.com/-_a-xuBixvt8/X1IJ3rp4ZZI/AAAAAAAHKBI/wAuLfhk6XJ4dKe5UXl3BWbkWlw5WWXz6gCLcBGAsYHQ/s1600/Rare%2BBeauty%2B%25282%2529.jpg",
+        "category": "Beauty"
+      },
+      {
+        "id":10,
+        "price": 99,
+        "name": "Trandy braclets",
+        "img":"https://i.pinimg.com/originals/33/25/5c/33255c85a57fe58ecd1fc21a6cd6b5fa.jpg",
+        "category": "Jewellery"
+      },
+      {
+        "id":11,
+        "price": 359,
+        "name": "baby shoots",
+        "img":"https://tse1.mm.bing.net/th?id=OIP.NNiLArxccf6x3cWIlWUd1QHaHa&pid=Api&P=0&h=180",
+        "category": "Kid's Fashion"
+      },
+      {
+        "id":12,
+        "name": "Trandy women top",
+        "price": 670,
+        "img":"https://i.pinimg.com/originals/28/8b/2a/288b2ab56ff05a9a05e69ed2ec9a43bb.jpg",
+        "category": "Woman's Fashion"
+      },
+      {
+        "id":13,
+        "name": "mans sweet Hoodie",
+        "price": 299,
+        "img":"https://sp.yimg.com/ib/th?id=OPAC.7XqvJdiRqO3wEg474C474&o=5&pid=21.1&w=&h=",
+        "category": "Man's Fashion"
+      },
+      {
+        "id":14,
+        "name": "basic natural products",
+        "price":999,
+        "img":"https://media.allure.com/photos/595d3d701533d77186041858/master/pass/edsfaves-07032017-lede.jpg?mbid=social_retweet",
+        "category": "Woman's Fashion"
+      },
+      {
+        "id":15,
+        "name": "Casual white shirt",
+        "price": 569,
+        "img":"https://5.imimg.com/data5/SELLER/Default/2022/1/QW/GB/FY/2985467/top-500x500.jpg",
+        "category": "Woman's Fashion"
+      },
+      {
+        "id":16,
+        "name": "Co-order set ",
+        "price": 899,
+        "img":"https://yevuclothing.com/cdn/shop/products/yevu-wrap-top-with-puff-sleeve-poppy-28528995664045.jpg?v=1618717969&width=1400",
+        "category": "Woman's Fashion"
+      },
+      {
+        "id":17,
+        "name": "pair of baby cloth ",
+        "price": 769,
+        "img":"https://tse4.mm.bing.net/th?id=OIP.-LZWDfJWq2pihTpXqztvXAHaHa&pid=Api&P=0&h=180",
+        "category": "Kid's Fashion"
+      },
+      {
+        "id":18,
+        "name": "Ring combos",
+        "price": 100,
+        "img":"https://i.pinimg.com/originals/38/85/22/388522a37a94d14eff3ef4c79adf97c5.jpg",
+        "category": "Woman's Fashion"
+      },
+      {
+        "id":19,
+        "name": "mans jeckets",
+        "price": 1200,
+        "img":"https://tse2.mm.bing.net/th?id=OIP.OwsAq19YdCctBAgSalViXQHaKe&pid=Api&P=0&h=180",
+        "category": "Man's Fashion"
+      },
+      {
+        "id":20,
+        "price": 899,
+        "name": "baby girl dress",
+        "img":"https://tse2.mm.bing.net/th?id=OIP.gKdZCF0SKRn_8gV88bTargHaHa&pid=Api&P=0&h=180",
+        "category": "Kid's Fashion"
+      },
+      {
+        "id":20,
+        "price": 1399,
+        "name": "gold neckless",
+        "img":"https://sp.yimg.com/ib/th?id=OPAC.S%2b2ny3EYS1hiBQ474C474&o=5&pid=21.1&w=&h=",
+        "category": "Jewellery"
+      }
+    ]
+  }
+  
